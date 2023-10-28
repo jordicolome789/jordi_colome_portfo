@@ -30,33 +30,33 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Hello, my name is Jordi Colomé"
+					tagline="I am an student of Informatic Engeenering degree in the UPC in Barcelona and doing an intership with Basetis."
 					align="start"
 				>
 					<div class="roles">
 						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="book" size="1.33em" /> Student</Pill>
+						<Pill><Icon icon="pencil-line" size="1.33em" /> Intership</Pill>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="Jordi Colomé smilingat the camera."
 					width="480"
 					height="620"
-					src="/assets/portrait.jpg"
+					src="/assets/image.jpeg"
 				/>
 			</header>
-
+			<h3>Some Skills</h3>
 			<Skills />
 		</div>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>Selected university projects</h3>
+					<p>Here are some interesting projects that I realized in the university.</p>
 				</header>
 
 				<div class="gallery">
@@ -81,17 +81,17 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3>Technical skills</h3>
 					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
-						a look below to learn more.
+						I have been fortunate enough to develop some technical skills during my career.
+						Here's a list of some of them:
 					</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
+							['C/C++', 'Django', 'Java', 'JavaScript', 'Ruby on Rails', 'Kotlin', 'CSS', 'SQL', 'HTML', 'React Native'].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
